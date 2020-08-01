@@ -84,3 +84,9 @@ erros.forEach(function(erro) {
     ul.appendChild(li)
 });
 }
+
+function adcionaPacienteNaTabela(paciente){
+pacienteTr = montaTrPaciente(paciente)
+var tabela = document.querySelector("#tabela-pacientes")
+tabela.appendChild(pacienteTr)
+}
